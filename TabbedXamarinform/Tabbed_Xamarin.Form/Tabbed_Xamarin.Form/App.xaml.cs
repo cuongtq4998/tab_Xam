@@ -1,4 +1,5 @@
 ﻿using System;
+using Tabbed_Xamarin.Form.View;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace Tabbed_Xamarin.Form
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new AnimalTabbedPage());
         }
 
         protected override void OnStart()
